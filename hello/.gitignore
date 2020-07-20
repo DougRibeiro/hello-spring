@@ -1,33 +1,47 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+######################
+# IntelliJ IDEA
+######################
+.idea/**
+!.editorconfig
 *.iml
+*.iws
 *.ipr
+*.ids
+*.orig
+/out/
 
 ### NetBeans ###
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+######################
+# Mac OSX
+######################
+.DS_Store
+
+######################
+# Maven
+######################
+/log/**
+/target/**
+
+logs/
+
+
+src/test/**/FeatureWIP.java
+
+.settings/*
+.classpath
+.factorypath
+.project
+
+common/.gitignore
+common/target
+service/.gitignore
+service/target
+client/.gitignore
+client/target
